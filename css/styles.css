@@ -1,0 +1,19 @@
+.container-fluid {
+  max-width: 1140px; }
+
+.header {
+  border-top: 7px solid #169fe6; }
+  .header .top-bar {
+    background: #e1e7ef;
+    height: 40px; }
+  .header .logo-bar {
+    min-height: 160px; }
+  .header .main-nav {
+    height: 80px;
+    background: #169fe6; }
+
+.main-banner {
+  height: 540px;
+  background: url(../images/main-banner.jpg) no-repeat center top; }
+
+/*# sourceMappingURL=styles.css.map */
