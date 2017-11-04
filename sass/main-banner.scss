@@ -1,4 +1,38 @@
 .main-banner {
 	height:540px;
 	background: url(../images/main-banner.jpg) no-repeat center top;
+    background-size: cover; 
+    margin-bottom: 130px;   
+}
+.main-banner .container-fluid{
+	position: relative;
+	height: 540px;
+}
+.features {
+	position: absolute;
+	bottom: 0;
+	width: calc(100% - 60px);
+	left: 50%;
+	transform: translate(-50%, 50%)
+}
+.features .col {
+	height: 260px;
+	background: $primary-color;
+	align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    text-align: center
+}
+.features .col:nth-child(even) {
+	background: $near-primary-color;
+}
+.features .col a {
+	color: #fff;
+}
+.features .col a:hover {
+	opacity: 0.6;
+}
+.features .col i{
+	font-size: 24px;
 }

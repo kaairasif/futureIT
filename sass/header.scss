@@ -1,14 +1,152 @@
 .header {
-	border-top:7px solid #169fe6;
+	border-top:5px solid $primary-color;
 	.top-bar {
-		background: #e1e7ef;
+		background: $off-white;
 		height: 40px;
 	}
 	.logo-bar {
 		min-height: 160px;
 	}
 	.main-nav {
-		height: 80px;
-		background: #169fe6;
+		background: $primary-color;
 	}
+}
+.logo {
+	display:inline-block;
+	margin: 15px 0;
+}
+.inline-menu li {
+	display:inline-block;
+	margin:0 5px;
+}
+.inline-menu li:first-child {
+    margin-left: 0;
+}
+.inline-menu li:last-child {
+    margin-right: 0;
+}
+.inline-menu li a {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+	display: inline-block;
+	padding: 10px 0;
+	position:relative;
+	color: $primary-color;
+}
+.inline-menu li a:hover {
+	color: $near-primary-color;
+}
+.inline-menu li a:after {
+	content: "";
+	position: absolute;
+	top:49%;
+	transform: translateY(-50%);
+	right:-8px;
+	width:2px;
+	height:12px;
+	background: $primary-color;
+}
+.inline-menu li:last-child a:after {
+	display: none;
+}
+ul.inline-block-menu {
+    text-align: right;
+    margin: 8px 0;
+}
+ul.inline-block-menu li {
+    display: inline-block;
+    margin: 0 4px;
+}
+ul.inline-block-menu li:first-child {
+	margin-left:0;
+}
+ul.inline-block-menu li:last-child {
+	margin-right:0;
+}
+ul.inline-block-menu li a {
+    text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+	display: inline-block;
+	padding: 2px 10px;
+	color: #fff;
+	background: $primary-color;
+}
+ul.inline-block-menu li a:hover {
+	background: $near-primary-color;
+}
+.main-nav .navbar{
+	padding:0;
+    background: transparent !important;
+}
+.main-nav .navbar .navbar-nav li a {
+    color: #fff;
+    font-size: 18px;
+    padding: 27px 27px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+.main-nav .navbar .navbar-nav li a:hover {
+	background: $near-primary-color;
+	color: #fff; 
+}
+.main-nav .navbar .navbar-nav li a:after {
+	position: absolute;
+	content: "";
+	height: 100%;
+	top: 0;
+	right: -1px;
+	width: 2px;
+	background: $near-primary-color;
+}
+.main-nav .navbar .navbar-nav li:first-child a:before {
+	position: absolute;
+	content: "";
+	height: 100%;
+	top: 0;
+	left: -1px;
+	width: 2px;
+	background: $near-primary-color;
+}
+.main-nav .navbar .navbar-nav li.active a {
+	color: #fff;
+	background: $near-primary-color;
+}
+.service-list{
+	text-align: right;
+    display: flex;
+    align-items: center;
+    height: 160px;
+    justify-content: flex-end;
+}
+.service-list li {
+	display: inline-block;
+	padding: 0px 15px;
+	text-align: left;
+	margin: 40px 0;
+	vertical-align: top;
+}
+.service-list li h4 {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+    line-height: 20px;
+}
+.service-list li span {
+	display: block;
+    font-size: 16px;
+    font-weight: 600;
+}
+.service-list li a {
+	display: block;
+	font-size: 16px;
+    font-weight: 600;
+    color: #333;
+}
+.service-list li i {
+	font-size: 14px;
+	padding-right:3px;
+	color: $primary-color;
 }

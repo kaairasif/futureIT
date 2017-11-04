@@ -1,3 +1,33 @@
+body {
+    font-family: 'Rajdhani', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 14px;
+	line-height: normal;
+}
 .container-fluid {
-	max-width: 1140px;
+	max-width: 1170px;
+}
+ul, ol {
+	list-style:none;
+	padding:0;
+	margin: 0;
+}
+a {
+	transition: 0.3s ease-in-out;
+}
+a:hover {
+	text-decoration: none;
+}
+.title {
+	text-align: center;
+	margin-bottom:40px;
+	text-tansform: uppercase;
+}
+.btn {
+	border-radius: 0 !important;
+}
+
+.btn.btn-primary {
+	background: $primary-color;
+	border-color: $primary-color;
 }
