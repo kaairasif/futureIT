@@ -5,7 +5,7 @@
 		height: 40px;
 	}
 	.logo-bar {
-		min-height: 160px;
+		min-height: 120px;
 	}
 	.main-nav {
 		background: $primary-color;
@@ -80,19 +80,22 @@ ul.inline-block-menu li a:hover {
 	padding:0;
     background: transparent !important;
 }
-.main-nav .navbar .navbar-nav li a {
+.main-nav .navbar .navbar-nav > li > a {
     color: #fff;
     font-size: 18px;
-    padding: 27px 27px;
+    padding: 15px 27px;
     font-weight: 500;
     position: relative;
     transition: 0.3s ease-in-out;
 }
-.main-nav .navbar .navbar-nav li a:hover {
+.main-nav .navbar .navbar-nav > li > a:hover,
+.main-nav .navbar .navbar-nav > li.active > a,
+.main-nav .navbar .navbar-nav > li.show > a, 
+.main-nav .navbar .navbar-nav > li.dropdown:hover > a {
 	background: $near-primary-color;
 	color: #fff; 
 }
-.main-nav .navbar .navbar-nav li a:after {
+.main-nav .navbar .navbar-nav > li > a:after {
 	position: absolute;
 	content: "";
 	height: 100%;
@@ -100,8 +103,9 @@ ul.inline-block-menu li a:hover {
 	right: -1px;
 	width: 2px;
 	background: $near-primary-color;
+	border:none;
 }
-.main-nav .navbar .navbar-nav li:first-child a:before {
+.main-nav .navbar .navbar-nav > li:first-child > a:before {
 	position: absolute;
 	content: "";
 	height: 100%;
@@ -110,15 +114,12 @@ ul.inline-block-menu li a:hover {
 	width: 2px;
 	background: $near-primary-color;
 }
-.main-nav .navbar .navbar-nav li.active a {
-	color: #fff;
-	background: $near-primary-color;
-}
+
 .service-list{
 	text-align: right;
     display: flex;
     align-items: center;
-    height: 160px;
+    height: 120px;
     justify-content: flex-end;
 }
 .service-list li {

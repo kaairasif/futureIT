@@ -34,3 +34,61 @@ a:hover {
 .owl-carousel .owl-item img {
 	width: auto;
 }
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, 10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(0, 10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+// BOOTSTRAP: Open Submenu on hover
+li.dropdown:hover .dropdown-menu {
+    opacity: 1;
+}
+li.dropdown:hover .dropdown-menu {
+    display: block;
+    -webkit-animation: fadeIn 0.3s;
+    animation: fadeIn 0.3s;  
+}
+li.dropdown.show .dropdown-menu {
+	display:block;	
+}
+li.dropdown .dropdown-menu {
+	margin:0;
+	border:0;
+	border-radius:0;
+	padding:0;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    clear: both;
+    font-weight: 600;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background: none;
+    border-bottom: 1px solid $primary-color;
+}
+.dropdown-item:hover {
+	background: $near-primary-color;
+	color:#fff;
+}
+.dropdown-item:last-child{
+	border-bottom:none;
+}

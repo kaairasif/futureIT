@@ -1,19 +1,19 @@
 .main-banner {
 	height:540px;
-	background: url(../images/main-banner.jpg) no-repeat center top;
-    background-size: cover; 
-    margin-bottom: 130px;   
+	margin-bottom: 130px; 
+	position: relative;  
 }
 .main-banner .container-fluid{
-	position: relative;
 	height: 540px;
 }
 .features {
 	position: absolute;
 	bottom: 0;
+	max-width:1110px;
 	width: calc(100% - 60px);
 	left: 50%;
-	transform: translate(-50%, 50%)
+	transform: translate(-50%, 50%);
+	z-index:1;
 }
 .features .col {
 	height: 260px;
@@ -35,4 +35,67 @@
 }
 .features .col i{
 	font-size: 24px;
+}
+
+.main-carousel .owl-item img {
+	height:560px;
+	width:100%;
+	object-fit:cover;
+}
+.main-carousel .owl-item .caption {
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    background: tomato;
+    color: #fff;
+    padding: 15px 15px 50px 15px;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size:24px;
+    font-weight: 500;
+    transition: all 2s;
+    opacity: 0;
+}
+.main-carousel .owl-item.active .caption{
+	top:120px;
+	opacity:1;
+}
+.main-carousel .owl-item .caption span {
+    display: block;
+    background: #000;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 50%;
+    font-weight: 600;
+    font-size: 15px;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);   
+    opacity: 0;
+    transition: 3s;
+}
+.main-carousel .owl-item.active .caption span{
+	opacity:1;
+	animation: rotateIn;
+    animation-duration: 3s;
+    animation-delay:1s;
+    animation-iteration-count: 1;
+}
+@keyframes rotateIn {
+    0% {
+        transform: translate(-50%, 50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, 50%) scale(1.1);
+    }
+    0% {
+        transform: translate(-50%, 50%) scale(1);
+    }
 }
