@@ -91,7 +91,8 @@ li.dropdown .dropdown-menu {
   .header .logo-bar {
     min-height: 120px; }
   .header .main-nav {
-    background: #169fe6; }
+    background: #169fe6;
+    z-index: 9 !important; }
 
 .logo {
   display: inline-block;

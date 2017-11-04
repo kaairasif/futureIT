@@ -1,4 +1,7 @@
 $(document).ready(function(){
+  
+  $(".main-nav").sticky({topSpacing:0});
+
   $(".client-carousel").owlCarousel({
   	items:4,
   	margin: 20,
@@ -19,7 +22,10 @@ $(document).ready(function(){
   	autoplay:true,
   	loop:true,
   	smartSpeed: 1600,
-  	autoplayTimeout: 7000
+  	autoplayTimeout: 7000,
+  	onTranslated: function(){
+  		console.log("translate")
+  	}
   });
 
   $(".dropdown").on("mouseenter", function(){
@@ -28,6 +34,8 @@ $(document).ready(function(){
   
   $(".dropdown").on("mouseleave", function(){
 		$(this).removeClass("show")
-  })
+  });
+
+
 
 });
