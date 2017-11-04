@@ -1,4 +1,20 @@
 .tagline-bar {
 	min-height:170px;
 	background: $primary-color;
+	color: #fff;
+	display: flex;
+    align-items: center;
+}
+
+.tagline-bar h4 {
+	margin: 0;
+	text-transform:capitalize;
+}
+.tagline-bar .btn{	
+	font-weight:500;
+}
+.tagline-bar p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
 }
