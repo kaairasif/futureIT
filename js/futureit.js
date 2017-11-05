@@ -22,9 +22,12 @@ $(document).ready(function(){
   	autoplay:true,
   	loop:true,
   	smartSpeed: 1600,
-  	autoplayTimeout: 7000,
+  	autoplayTimeout: 7000,  	
+  	onTranslate: function(){
+  		$(".main-carousel .caption").addClass("translate");
+  	},
   	onTranslated: function(){
-  		console.log("translate")
+  		$(".main-carousel .caption").removeClass("translate");
   	}
   });
 

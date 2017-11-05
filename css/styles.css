@@ -334,7 +334,7 @@ ul.inline-block-menu li a:hover {
 .main-carousel .owl-item .caption {
   width: 150px;
   position: absolute;
-  top: 50px;
+  top: 120px;
   left: 50%;
   background: tomato;
   color: #fff;
@@ -344,10 +344,6 @@ ul.inline-block-menu li a:hover {
   font-size: 24px;
   font-weight: 500;
   transition: all 2s;
-  opacity: 0; }
-
-.main-carousel .owl-item.active .caption {
-  top: 120px;
   opacity: 1; }
 
 .main-carousel .owl-item .caption span {
@@ -367,15 +363,14 @@ ul.inline-block-menu li a:hover {
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 50%);
-  opacity: 0;
+  opacity: 1;
   transition: 3s; }
 
-.main-carousel .owl-item.active .caption span {
-  opacity: 1;
-  animation: rotateIn;
-  animation-duration: 3s;
-  animation-delay: 1s;
-  animation-iteration-count: 1; }
+.main-carousel .caption {
+  opacity: 1; }
+
+.main-carousel .caption.translate {
+  opacity: 0; }
 
 @keyframes rotateIn {
   0% {
