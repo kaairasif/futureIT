@@ -13,7 +13,9 @@ $(document).ready(function(){
 
   $(".experts-carousel").owlCarousel({
   	items:4,
-  	margin: 20
+  	margin: 20,
+    autoplay:true,
+    loop:true
   });
 
   $(".main-carousel").owlCarousel({

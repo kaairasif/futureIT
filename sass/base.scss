@@ -1,7 +1,7 @@
 body {
     font-family: 'Rajdhani', sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-size: 14px;
+	font-size: 15px;
 	line-height: normal;
 }
 .container-fluid {
@@ -72,6 +72,7 @@ li.dropdown .dropdown-menu {
 	border:0;
 	border-radius:0;
 	padding:0;
+    background: #fafafa;
 }
 .dropdown-item {
     display: block;
@@ -91,4 +92,28 @@ li.dropdown .dropdown-menu {
 }
 .dropdown-item:last-child{
 	border-bottom:none;
+}
+.inner-page-wrap {
+    min-height: 500px;
+}
+.page-banner {
+    padding: 100px 0;
+    color: #fff;
+}
+.page-head {
+    h2 {
+        font-size: 32px;
+        margin-bottom: 5px;
+        line-height: 32px;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 500;   
+    }
+}
+.sticky-wrapper {
+    height: 53px !important;
+}
+.inner-content {
+    padding: 40px 0 0 0;
 }
